@@ -1,6 +1,5 @@
 # Vehicle_Efficiency_Calculator
-Activity 1 EEL
-
+Student Grading System
 Develop a C program to calculate the average and grade of each student in the first year BTech program based on their marks obtained in the first semester. The program should prompt the user to input the marks of each student for subjects such as mathematics, physics, chemistry, english and computer science. Using control structures such as loops and conditional statements, the program should calculate the average marks and assign grades to each student according to predefined grading criteria. Finally the program should display the average marks and grade for each student.
 
 Research:
@@ -32,7 +31,7 @@ Ideate:
 To design a program that helps drivers track the fuel efficiency of multiple vehicles. The program takes the vehicle name, distance traveled, fuel consumed and calculates its mileage (km per litre) and classifies each vehicle as Highly Efficient, Moderately Efficient, Low Efficiency or Poor Efficiency.
 
 
-Mileage (km per litre)
+Mileage for car (km per litre)
 Efficiency Category
 > 20
 High Efficiency
@@ -43,6 +42,18 @@ Low Efficiency
 < 10
 Poor Efficiency
 
+
+
+Mileage for bike (km per litre)
+Efficiency Category
+> 35
+High Efficiency
+25 - 35
+Moderate Efficiency
+15 - 25
+Low Efficiency
+< 15
+Poor Efficiency
 
 
 
@@ -101,29 +112,37 @@ int main(){
 
 Test:
 
-Enter number of vehicles: 4
+Enter number of vehicles: 5
 
-Enter the name of the vehicle: Car_A
-Enter the distance traveled (km): 200
-Enter the fuel consumed (litre): 40
-
-Enter the name of the vehicle: Car_B
-Enter the distance traveled (km): 250
+Enter the type of the vehicle, 1 for bike, 2 for car: 1
+Enter the name of the vehicle: Bike_A
+Enter the distance traveled (km): 300
 Enter the fuel consumed (litre): 10
 
-Enter the name of the vehicle: Car_C
-Enter the distance traveled (km): 340
-Enter the fuel consumed (litre): 20
+Enter the type of the vehicle, 1 for bike, 2 for car: 2
+Enter the name of the vehicle: Car_A
+Enter the distance traveled (km): 250
+Enter the fuel consumed (litre): 25
 
-Enter the name of the vehicle: Car_D
-Enter the distance traveled (km): 360
-Enter the fuel consumed (litre): 30
+Enter the type of the vehicle, 1 for bike, 2 for car: 1
+Enter the name of the vehicle: Bike_B
+Enter the distance traveled (km): 500
+Enter the fuel consumed (litre): 45
+
+Enter the type of the vehicle, 1 for bike, 2 for car: 1
+Enter the name of the vehicle: Bike_C
+Enter the distance traveled (km): 450
+Enter the fuel consumed (litre): 34
+
+Enter the type of the vehicle, 1 for bike, 2 for car: 2
+Enter the name of the vehicle: Car_B
+Enter the distance traveled (km): 730
+Enter the fuel consumed (litre): 45
 
 ---- Vehicle Efficiency Report ---
- Vehicle      Mileage(km/l)    Efficiency
- Car_A        5.0              Poor Efficiency
- Car_B        25.0             High Efficiency
- Car_C        17.0             Moderate Efficiency
- Car_D        12.0             Low Efficiency
-
-
+ Vehicle  	Mileage(km/l)	Efficiency  
+ Bike_A   	30.0         	Moderate Efficiency
+ Car_A    	10.0         	Poor Efficiency
+ Bike_B   	11.0         	Poor Efficiency
+ Bike_C   	13.0         	Poor Efficiency
+ Car_B    	16.0         	Low Efficiency
